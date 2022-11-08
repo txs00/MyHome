@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-size: cover;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        div {
+            color: #fff;
+            font-size: 40px;
+        }
+
+        .zf1 {
+            position: absolute;
+            top: 48.5%;
+            left: 48.5%;
+            width: 100px;
+            transform-style: preserve-3d;
+            transform: translate(-50%, -50%);
+            animation: move 10s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotateY(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .zf1 li {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            opacity: 0.9;
+        }
+
+        .zf1 li:first-child {
+            background: url('./imges/01.png') center center no-repeat;
+            transform: translateZ(50px);
+
+        }
+
+        .zf1 li:nth-child(2) {
+            background: url('./imges/02.png') center center no-repeat;
+            transform: translateZ(-50px);
+
+        }
+
+        .zf1 li:nth-child(3) {
+            background: url('./imges/03.png') center center no-repeat;
+
+            transform: rotateX(90deg) translateZ(50px);
+        }
+
+        .zf1 li:nth-child(4) {
+            background: url('./imges/04.png') center center no-repeat;
+            transform: rotateX(-90deg) translateZ(50px);
+
+        }
+
+        .zf1 li:nth-child(5) {
+            background: url('./imges/05.png') center center no-repeat;
+
+            transform: rotateY(90deg) translateZ(50px);
+
+        }
+
+        .zf1 li:nth-child(6) {
+            background: url('./imges/06.png') center center no-repeat;
+
+            transform: rotateY(-90deg) translateZ(50px);
+
+        }
+
+        .zf2 {
+            position: absolute;
+            top: 42%;
+            left: 45%;
+            width: 200px;
+            transform-style: preserve-3d;
+            transform: translate(-50%, -50%);
+            animation: move 10s linear infinite;
+        }
+
+        .zf2 li {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            opacity: 0.2;
+        }
+
+        .zf2 li:first-child {
+            background: url('./imges/07.png') center center no-repeat;
+
+            transform: translateZ(100px);
+
+        }
+
+        .zf2 li:nth-child(2) {
+            background: url('./imges/08.png') center center no-repeat;
+            transform: translateZ(-100px);
+
+        }
+
+        .zf2 li:nth-child(3) {
+            background: url('./imges/09.png') center center no-repeat;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .zf2 li:nth-child(4) {
+            background: url('./imges/10.png') center center no-repeat;
+            transform: rotateX(-90deg) translateZ(100px);
+
+        }
+
+        .zf2 li:nth-child(5) {
+            background: url('./imges/11.png') center center no-repeat;
+            transform: rotateY(90deg) translateZ(100px);
+
+        }
+
+        .zf2 li:nth-child(6) {
+            background: url('./imges/12.png') center center no-repeat;
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        /* 划过效果 */
+        .zf2:hover {
+            position: absolute;
+            top: 27%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            animation: move2 5S linear infinite;
+        }
+
+        @keyframes move2 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotateY(180deg) rotate(45deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .zf2:hover li {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            opacity: 0.7;
+            background-size: cover;
+        }
+
+        .zf2:hover li:first-child {
+            transform: translateZ(200px);
+
+        }
+
+        .zf2:hover li:nth-child(2) {
+            transform: translateZ(-200px);
+
+        }
+
+        .zf2:hover li:nth-child(3) {
+            transform: rotateX(90deg) translateZ(200px);
+        }
+
+        .zf2:hover li:nth-child(4) {
+            transform: rotateX(-90deg) translateZ(200px);
+
+        }
+
+        .zf2:hover li:nth-child(5) {
+            transform: rotateY(90deg) translateZ(200px);
+
+        }
+
+        .zf2:hover li:nth-child(6) {
+            transform: rotateY(-90deg) translateZ(200px);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="zf1">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+        <div class="zf2">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+    </div>
+</body>
+
+</html>
